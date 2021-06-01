@@ -36,6 +36,9 @@ public class DriverConfigurator {
             case firefox: {
                 return FireFoxDriverProvider.class.getName();
             }
+            case selenoid: {
+                return SelenoidDriverProvider.class.getName();
+            }
             default:
                 throw new IllegalArgumentException(String.format("No implementation for provided driver type: " +
                         "Driver Type[%s]", driverType));

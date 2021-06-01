@@ -31,7 +31,7 @@ public class WebBaseTest {
     @BeforeMethod(alwaysRun = true, description = "Initialize web driver configuration")
     protected void beforeMethod() {
         DriverConfigurator.configure();//this method doesn't open the browser yet
-        Selenide.open(CONFIG_PROPS.mobyMaxUrl());
+        Selenide.open(CONFIG_PROPS.baseWebUrl());
     }
 
     @AfterMethod(alwaysRun = true, description = "Close driver")

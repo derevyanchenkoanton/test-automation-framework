@@ -25,7 +25,7 @@ public class TeacherLoginTest extends WebBaseTest {
                 .logout();
     }
 
-    @TmsLink("AU-202")
+    @TmsLink("AU")
     @Test(description = "Teacher login", groups = {TestNgGroups.REGRESSION})
     public void testTeacherLogin() {
         TeacherHomePage teacherHomePage = loginAsTeacher(teacherRegistrationModel.getEmail(), teacherRegistrationModel.getPassword());

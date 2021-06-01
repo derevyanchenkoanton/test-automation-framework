@@ -21,6 +21,9 @@ public class DriverBinaryManager {
             case chrome:
                 WebDriverManager.chromedriver().setup();
                 break;
+            case selenoid:
+
+                break;
             default:
                 throw new IllegalArgumentException(String.format("No implementation for provided driver type: " +
                         "Driver Type[%s]", driverType));

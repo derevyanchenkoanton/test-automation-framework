@@ -20,7 +20,9 @@ Driver types should be specified in test/resources/config/config.properties
 
 Defined driver types are located in DriverType
 
-Execute tests: mvn clean test -Dsuite=regression
+Execute tests on testMoby server: mvn clean test -Dsuite=regression  -Denv=testmoby -Drelease.or.branch.prefix.name=r-6118
+
+Execute tests on prod server: mvn clean test -Dsuite=regression  -Denv=prod
 
 Generate allure report: mvn allure:serve
 
